@@ -366,7 +366,7 @@ namespace Envelope.Database {
         }
 
         public void insert_transaction (Transaction transaction) throws DatabaseError {
-            GLib.Value[8] args = {
+            GLib.Value[] args = {
                 transaction.label,
                 transaction.description,
                 transaction.amount,
@@ -408,7 +408,7 @@ namespace Envelope.Database {
 
 
         public void update_transaction (Transaction transaction) throws DatabaseError {
-            GLib.Value[9] args = {
+            GLib.Value[] args = {
                 transaction.label,
                 transaction.description,
                 (int) transaction.direction,
